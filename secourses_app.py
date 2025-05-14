@@ -819,6 +819,6 @@ if __name__ == '__main__':
 
     print("Launching Gradio app...")
     block.queue(max_size=10) # Max 10 concurrent requests
-    block.launch(inbrowser=True, share=args.share, server_name=args.host, server_port=args.port)
+    block.launch(inbrowser=True, share=args.share)
 
 # --- END OF REVISED FILE secourses_app.py ---
