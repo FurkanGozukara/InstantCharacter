@@ -15,3 +15,4 @@ models/models--ZhengPeng7--BiRefNet/
 models/modules/
 models/models--*
 tmp
+outputs
