@@ -701,7 +701,7 @@ elif not available_loras_g: # If no LoRAs found at all (empty list including no 
     initial_default_lora_value = None # Or handle as appropriate, gr.Dropdown might error with None value if choices are also empty
 
 with gr.Blocks(css=css, theme=gr.themes.Soft()) as block:
-    gr.Markdown("# InstantCharacter SECourses Improved App V2 - https://www.patreon.com/posts/126995127")
+    gr.Markdown("# InstantCharacter SECourses Improved App V3 - https://www.patreon.com/posts/126995127")
     with gr.Row():
         with gr.Column():
             image_pil = gr.Image(label="Source Character Image", type='pil', height=768, width=768)

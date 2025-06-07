@@ -111,7 +111,7 @@ class InstantCharacterFluxPipeline(FluxPipeline):
         nb_token = kwargs['nb_token']
         device=kwargs.get('nb_token', torch.device('cuda'))
         
-        state_dict = torch.load(subject_ip_adapter_path, map_location="cpu")
+        state_dict = torch.load(subject_ip_adapter_path, map_location="cpu", weights_only=False)
         dtype = self.transformer.dtype
 
 
