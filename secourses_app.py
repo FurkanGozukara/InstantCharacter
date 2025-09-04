@@ -74,7 +74,7 @@ birefnet_transform_image = None # Matting model transforms
 
 # Model paths (will be used in initialize_pipeline_and_models)
 ip_adapter_path = None
-base_model = 'black-forest-labs/FLUX.1-dev'
+base_model = 'MonsterMMORPG/flux_dev_backup'
 image_encoder_path_g = 'google/siglip-so400m-patch14-384' # Renamed to avoid conflict
 image_encoder_2_path_g = 'facebook/dinov2-giant' # Renamed
 birefnet_path_g = 'ZhengPeng7/BiRefNet'
@@ -701,7 +701,7 @@ elif not available_loras_g: # If no LoRAs found at all (empty list including no 
     initial_default_lora_value = None # Or handle as appropriate, gr.Dropdown might error with None value if choices are also empty
 
 with gr.Blocks(css=css, theme=gr.themes.Soft()) as block:
-    gr.Markdown("# InstantCharacter SECourses Improved App V3 - https://www.patreon.com/posts/126995127")
+    gr.Markdown("# InstantCharacter SECourses Improved App V4 - https://www.patreon.com/posts/126995127")
     with gr.Row():
         with gr.Column():
             image_pil = gr.Image(label="Source Character Image", type='pil', height=768, width=768)

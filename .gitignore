@@ -16,3 +16,4 @@ models/modules/
 models/models--*
 tmp
 outputs
+.claude

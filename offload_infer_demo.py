@@ -6,7 +6,7 @@ from pipeline import InstantCharacterFluxPipeline
 # Step 1 Load base model and adapter
 
 ip_adapter_path = 'checkpoints/instantcharacter_ip-adapter.bin'
-base_model = 'black-forest-labs/FLUX.1-dev'
+base_model = 'MonsterMMORPG/flux_dev_backup'
 image_encoder_path = 'google/siglip-so400m-patch14-384'
 image_encoder_2_path = 'facebook/dinov2-giant'
 seed = 123456
