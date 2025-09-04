@@ -16,8 +16,8 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 dtype = torch.float16 if str(device).__contains__("cuda") else torch.float32
 
 # pre-trained weights
-ip_adapter_path = hf_hub_download(repo_id="Tencent/InstantCharacter", filename="instantcharacter_ip-adapter.bin")
-base_model = 'black-forest-labs/FLUX.1-dev'
+ip_adapter_path = hf_hub_download(repo_id="MonsterMMORPG/tencent_InstantCharacter_backup", filename="instantcharacter_ip-adapter.bin")
+base_model = 'MonsterMMORPG/flux_dev_backup'
 image_encoder_path = 'google/siglip-so400m-patch14-384'
 image_encoder_2_path = 'facebook/dinov2-giant'
 birefnet_path = 'ZhengPeng7/BiRefNet'
